@@ -157,7 +157,7 @@ pip install -r requirements.txt
 
 ## Challenges and Limitations
 
-While the segmentation head of the model produces state-of-the-art segmentation masks, the classification head struggles to distinguish between benign and malignant tumours. This could be design choices such as small image sizes, choice of backbone or image preprocessing steps.
+While the segmentation head of the model produces state-of-the-art segmentation masks (Dice: 0.9159, IoU: 0.8938, HD95: 0.8085), the classification head demonstrates weaker performance in distinguishing between benign and malignant tumors. This limitation may stem from several design choices, such as the relatively small input image size, the selected backbone architecture, or preprocessing strategies that may have reduced discriminative features. Improving classification performance could require experimenting with larger image resolutions, stronger backbones, or incorporating domain-specific preprocessing and feature extraction techniques.
 
 ## Future Improvements
 
