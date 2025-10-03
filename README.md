@@ -115,7 +115,7 @@ Evaluation is performed per-fold inside a Stratified K-Fold (default 5 folds) ex
 - AUC: 0.7871
 - F1 Score: 0.7921
 
-![Confusion Matrix](submission\confusion_matrix.png)
+![Confusion Matrix](https://github.com/David-Ademola/Cancer-Detection-and-Segmentation-in-Breast-Scans/blob/master/submission/confusion_matrix.png)
 
 ## Segmentation Results
 
@@ -123,8 +123,8 @@ Evaluation is performed per-fold inside a Stratified K-Fold (default 5 folds) ex
 - HD95: 0.8085
 - IoU: 0.8938
 
-![Benign Image](submission\PACE_00001_001_BUSBRA.png)
-![Benign Segmentation](submission\segmentation\PACE_00001_001_BUSBRA_mask.png)
+![Benign Image](https://github.com/David-Ademola/Cancer-Detection-and-Segmentation-in-Breast-Scans/blob/master/submission/PACE_00001_001_BUSBRA.png)
+![Benign Segmentation](https://github.com/David-Ademola/Cancer-Detection-and-Segmentation-in-Breast-Scans/blob/master/submission/segmentation/PACE_00001_001_BUSBRA_mask.png)
 
 ## How to reproduce
 
@@ -154,6 +154,10 @@ pip install -r requirements.txt
 - `src/mtl_oca.py` — multi-task model glue code.
 - `src/modules.py` — ResUNet, layers and attention blocks.
 - `models/` — saved checkpoints.
+
+## Challenges and Limitations
+
+While the segmentation head of the model produces state-of-the-art segmentation masks, the classification head struggles to distinguish between benign and malignant tumours. This could be design choices such as small image sizes, choice of backbone or image preprocessing steps.
 
 ## Future Improvements
 
